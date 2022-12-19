@@ -5,7 +5,6 @@ include_directories(${EXAMPLE_SOURCES_PATH})
 file(GLOB EXAMPLE_SOURCES
         "${EXAMPLE_SOURCES_PATH}/*.cpp"
 )
-message(${EXAMPLE_SOURCES})
 
 add_executable(${EXAMPLE_NAME} ${EXAMPLE_SOURCES})
 set_target_properties(${EXAMPLE_NAME} PROPERTIES LINKER_LANGUAGE CXX)

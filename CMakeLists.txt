@@ -27,4 +27,4 @@ project(${PROJ_NAME})
 
 # Add project's modules
 add_subdirectory(src/1-hello-world)
-add_subdirectory(src/2-second-test)
+add_subdirectory(src/2-uniform-initialization)
