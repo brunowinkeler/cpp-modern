@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# Folders
+build/
+install/
+3rdParty/
+.vscode/
