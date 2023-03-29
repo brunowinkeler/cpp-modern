@@ -5,7 +5,7 @@ namespace fs = std::filesystem;
 
 int main()
 {
-    fs::path dir_path = "/home/bruno";
+    fs::path dir_path = "/";
 
     for (const auto& entry : fs::directory_iterator(dir_path))
     {
