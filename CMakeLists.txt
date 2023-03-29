@@ -26,5 +26,18 @@ set(PROJECT_THIRD_PARTIES   ${CMAKE_SOURCE_DIR}/3rdParty)
 project(${PROJ_NAME})
 
 # Add project's modules
-add_subdirectory(src/1-hello-world)
-add_subdirectory(src/2-uniform-initialization)
+set(CPP_VERSION_11      11)
+set(CPP_VERSION_14      14)
+set(CPP_VERSION_17      17)
+
+set(PROGRAM_11_NUM01      1-hello-world)
+set(PROGRAM_11_NUM02      2-uniform-initialization)
+
+set(PROGRAM_17_NUM01      1-filesystem)
+
+## 11
+add_subdirectory(${PROJECT_SOURCES}/${CPP_VERSION_11}/${PROGRAM_11_NUM01})
+add_subdirectory(${PROJECT_SOURCES}/${CPP_VERSION_11}/${PROGRAM_11_NUM02})
+
+## 17
+add_subdirectory(${PROJECT_SOURCES}/${CPP_VERSION_17}/${PROGRAM_17_NUM01})
