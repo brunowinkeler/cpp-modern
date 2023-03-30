@@ -1,4 +1,5 @@
 function(configure_exec exec_name path_relative)
+    set (CMAKE_CXX_STANDARD ${path_relative})
 
     set(EXAMPLE_SOURCES_PATH       ${PROJECT_SOURCES}/${path_relative}/${exec_name})
     include_directories(${EXAMPLE_SOURCES_PATH})
