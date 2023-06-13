@@ -21,5 +21,7 @@ configure_exec("${PROGRAM_14_NUM01}" "${CPP_VERSION_14}")
 # CPP 17
 set(PROGRAM_17_NUM01      1-filesystem)
 set(PROGRAM_17_NUM02      2-constexpr-if)
+set(PROGRAM_17_NUM03      3-optional)
 configure_exec("${PROGRAM_17_NUM01}" "${CPP_VERSION_17}")
 configure_exec("${PROGRAM_17_NUM02}" "${CPP_VERSION_17}")
+configure_exec("${PROGRAM_17_NUM03}" "${CPP_VERSION_17}")
