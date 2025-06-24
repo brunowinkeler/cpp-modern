@@ -3,7 +3,8 @@
 
 #include <string>
 
-template <typename T> class Box
+template <typename T>
+class Box
 {
 public:
     Box(T v) : value(v) {}
@@ -17,7 +18,8 @@ private:
 };
 
 // Explicit specialization for bool
-template <> class Box<bool>
+template <>
+class Box<bool>
 {
 public:
     Box(bool v) : value(v) {}

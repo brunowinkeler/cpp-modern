@@ -1,7 +1,8 @@
 #ifndef DEFAULTBOX_H
 #define DEFAULTBOX_H
 
-template <typename T = int> class DefaultBox
+template <typename T = int>
+class DefaultBox
 {
 public:
     T value;

@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-template <typename T, typename U> class Storage
+template <typename T, typename U>
+class Storage
 {
 public:
     void info()
@@ -13,7 +14,8 @@ public:
 };
 
 // Partial specialization when U = int
-template <typename T> class Storage<T, int>
+template <typename T>
+class Storage<T, int>
 {
 public:
     void info()

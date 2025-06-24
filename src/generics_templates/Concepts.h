@@ -8,7 +8,8 @@ concept Addable = requires(T a, T b) {
     { a + b } -> std::convertible_to<T>;
 };
 
-template <Addable T> T add(T a, T b)
+template <Addable T>
+T add(T a, T b)
 {
     return a + b;
 }

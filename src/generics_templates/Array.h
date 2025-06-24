@@ -1,7 +1,8 @@
 #ifndef ARRAY_H
 #define ARRAY_H
 
-template <typename T, int Size> class Array
+template <typename T, int Size>
+class Array
 {
 public:
     T data[Size];

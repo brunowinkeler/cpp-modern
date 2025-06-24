@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-template <typename... Args> void printAll(Args... args)
+template <typename... Args>
+void printAll(Args... args)
 {
     (std::cout << ... << args) << "\n"; // Fold expression (C++17)
 }

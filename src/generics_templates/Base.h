@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-template <typename T> class Base
+template <typename T>
+class Base
 {
 public:
     void foo()
