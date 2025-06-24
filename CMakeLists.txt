@@ -20,7 +20,6 @@ set(PROJECT_BINARIES    "${CMAKE_INSTALL_PREFIX}/bin")
 
 # Set of Local Variables for location
 set(PROJECT_SOURCES         ${CMAKE_SOURCE_DIR}/src)
-set(PROJECT_THIRD_PARTIES   ${CMAKE_SOURCE_DIR}/3rdParty)
 
 # Creation of project with call of toolchain
 project(${PROJ_NAME})

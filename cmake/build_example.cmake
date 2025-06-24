@@ -1,7 +1,7 @@
-function(configure_exec exec_name path_relative)
-    set (CMAKE_CXX_STANDARD ${path_relative})
+function(configure_exec exec_name)
+    set(CMAKE_CXX_STANDARD 20)
+    set(EXAMPLE_SOURCES_PATH       ${PROJECT_SOURCES}/${exec_name})
 
-    set(EXAMPLE_SOURCES_PATH       ${PROJECT_SOURCES}/${path_relative}/${exec_name})
     include_directories(${EXAMPLE_SOURCES_PATH})
 
     file(GLOB EXAMPLE_SOURCES
@@ -14,8 +14,8 @@ function(configure_exec exec_name path_relative)
 
     # Define installation folders
     install(TARGETS ${exec_name} 
-            RUNTIME DESTINATION ${PROJECT_BINARIES}/${path_relative}/${exec_name}
-            LIBRARY DESTINATION ${PROJECT_BINARIES}/${path_relative}/${exec_name}
-            ARCHIVE DESTINATION ${PROJECT_LIBS}/${path_relative}/${exec_name})
+            RUNTIME DESTINATION ${PROJECT_BINARIES}
+            LIBRARY DESTINATION ${PROJECT_BINARIES}
+            ARCHIVE DESTINATION ${PROJECT_LIBS})
 
-endfunction(configure_exec exec_name path_relative)
+endfunction(configure_exec exec_name)
